@@ -2,14 +2,14 @@
     <string name="app_name">S8 Ringtones New 2017</string>
     <string name="title_activity_tab">Ringtones Manager</string>
     <string name="action_settings">Settings</string>
-    <string name="banner_ad_unit_id">ca-app-pub-1474727696191193/9468977065</string>
+    <!--<string name="banner_ad_unit_id">ca-app-pub-1474727696191193/9468977065</string>-->
 
     <!--Test Ad Banner-->
-    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
-    <string name="native_ad_unit_id">ca-app-pub-1474727696191193/4555356485</string>
+    <!--<string name="native_ad_unit_id">ca-app-pub-1474727696191193/4555356485</string>-->
 
     <!--Test Ad Native-->
-    <!--<string name="native_ad_unit_id">ca-app-pub-3940256099942544/2793859312</string>-->
+    <string name="native_ad_unit_id">ca-app-pub-3940256099942544/2793859312</string>
 
 </resources>
