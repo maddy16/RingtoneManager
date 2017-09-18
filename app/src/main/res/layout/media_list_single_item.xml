@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp">
+
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/play_material" />
+
+    <TextView
+        android:id="@+id/ringtone_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/play_btn"
+        android:layout_marginTop="10dp"
+        android:text="S8 classic tone"
+        android:textSize="17.628sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/play_btn"
+        android:layout_below="@id/ringtone_name"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="17.628sp"
+            android:layout_height="17.628sp"
+            app:srcCompat="@drawable/rate_icon_item"/>
+        <ImageView
+            android:layout_width="17.628sp"
+            android:layout_height="17.628sp"
+            app:srcCompat="@drawable/rate_icon_item"/>
+        <ImageView
+            android:layout_width="17.628sp"
+            android:layout_height="17.628sp"
+            app:srcCompat="@drawable/rate_icon_item"/>
+        <ImageView
+            android:layout_width="17.628sp"
+            android:layout_height="17.628sp"
+            app:srcCompat="@drawable/rate_icon_item"/>
+        <ImageView
+            android:layout_width="17.628sp"
+            android:layout_height="17.628sp"
+            app:srcCompat="@drawable/ic_star_half_item"/>
+
+    </LinearLayout>
+    <ImageView
+        android:contentDescription="Set as Ringtone"
+        android:id="@+id/set_as_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/ringtone_name"
+        android:layout_alignParentEnd="true"
+
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ringer_material" />
+    <ImageView
+        android:contentDescription="Set as Alarm Tone"
+        android:id="@+id/set_alarm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/set_as_btn"
+        android:layout_alignBaseline="@id/ringtone_name"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/alarm_material" />
+    <ImageView
+        android:contentDescription="Set as Alarm Tone"
+        android:id="@+id/set_sms_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/set_alarm_btn"
+        android:layout_alignBaseline="@id/ringtone_name"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/sms_material" />
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/nativeAdView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/play_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="320x80"
+        ads:adUnitId="@string/native_ad_unit_id"
+        >
+    </com.google.android.gms.ads.NativeExpressAdView>
+
+
+
+</RelativeLayout>
